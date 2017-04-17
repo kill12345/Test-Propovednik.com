@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Report" duration-ms="156152" started-at="2017-04-17T22:17:53Z" finished-at="2017-04-17T22:20:29Z">
+    <groups>
+    </groups>
+    <test name="Report Test" duration-ms="156152" started-at="2017-04-17T22:17:53Z" finished-at="2017-04-17T22:20:29Z">
+      <class name="TestScript.TC_6">
+        <test-method status="PASS" signature="Test_6()[pri:0, instance:TestScript.TC_6@523884b2]" name="Test_6" duration-ms="19320" started-at="2017-04-17T15:19:05Z" finished-at="2017-04-17T15:19:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_6 -->
+      </class> <!-- TestScript.TC_6 -->
+      <class name="TestScript.TC_5">
+        <test-method status="PASS" signature="Test_5()[pri:0, instance:TestScript.TC_5@4501b7af]" name="Test_5" duration-ms="12501" started-at="2017-04-17T15:18:52Z" finished-at="2017-04-17T15:19:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_5 -->
+      </class> <!-- TestScript.TC_5 -->
+      <class name="TestScript.TC_4">
+        <test-method status="PASS" signature="Test_4()[pri:0, instance:TestScript.TC_4@28d25987]" name="Test_4" duration-ms="10391" started-at="2017-04-17T15:18:42Z" finished-at="2017-04-17T15:18:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_4 -->
+      </class> <!-- TestScript.TC_4 -->
+      <class name="TestScript.TC_3">
+        <test-method status="PASS" signature="Test_3()[pri:0, instance:TestScript.TC_3@59fa1d9b]" name="Test_3" duration-ms="11166" started-at="2017-04-17T15:18:31Z" finished-at="2017-04-17T15:18:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_3 -->
+      </class> <!-- TestScript.TC_3 -->
+      <class name="TestScript.TC_2">
+        <test-method status="PASS" signature="Test_2()[pri:0, instance:TestScript.TC_2@d8355a8]" name="Test_2" duration-ms="25624" started-at="2017-04-17T15:18:05Z" finished-at="2017-04-17T15:18:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_2 -->
+      </class> <!-- TestScript.TC_2 -->
+      <class name="TestScript.TC_1">
+        <test-method status="PASS" signature="Test_1()[pri:0, instance:TestScript.TC_1@224edc67]" name="Test_1" duration-ms="11776" started-at="2017-04-17T15:17:53Z" finished-at="2017-04-17T15:18:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_1 -->
+      </class> <!-- TestScript.TC_1 -->
+      <class name="TestScript.TC_10">
+        <test-method status="PASS" signature="Test_10()[pri:0, instance:TestScript.TC_10@3ffc5af1]" name="Test_10" duration-ms="9979" started-at="2017-04-17T15:20:05Z" finished-at="2017-04-17T15:20:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_10 -->
+      </class> <!-- TestScript.TC_10 -->
+      <class name="TestScript.TC_11">
+        <test-method status="PASS" signature="Test_11()[pri:0, instance:TestScript.TC_11@5e5792a0]" name="Test_11" duration-ms="14134" started-at="2017-04-17T15:20:15Z" finished-at="2017-04-17T15:20:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_11 -->
+      </class> <!-- TestScript.TC_11 -->
+      <class name="TestScript.TC_9">
+        <test-method status="PASS" signature="Test_9()[pri:0, instance:TestScript.TC_9@29774679]" name="Test_9" duration-ms="9634" started-at="2017-04-17T15:19:56Z" finished-at="2017-04-17T15:20:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_9 -->
+      </class> <!-- TestScript.TC_9 -->
+      <class name="TestScript.TC_8">
+        <test-method status="PASS" signature="Test_2()[pri:0, instance:TestScript.TC_8@5b275dab]" name="Test_2" duration-ms="21263" started-at="2017-04-17T15:19:24Z" finished-at="2017-04-17T15:19:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_2 -->
+      </class> <!-- TestScript.TC_8 -->
+      <class name="TestScript.TC_7">
+        <test-method status="PASS" signature="Test_2()[pri:0, instance:TestScript.TC_7@61832929]" name="Test_2" duration-ms="10303" started-at="2017-04-17T15:19:45Z" finished-at="2017-04-17T15:19:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_2 -->
+      </class> <!-- TestScript.TC_7 -->
+    </test> <!-- Report Test -->
+  </suite> <!-- Report -->
+</testng-results>

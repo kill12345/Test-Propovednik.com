@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Report">
+              <span class="suite-name border-passed">Report</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Report">
+                    <span>C:\Users\Stepa\Workspace\WebDriverProject\test_suites\Report.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Report">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Report">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Report">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Report">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Report">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Report">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Report" class="hide-methods passed suite-Report"> (hide)</a> <!-- hide-methods passed suite-Report -->
+                      <a href="#" panel-name="suite-Report" class="show-methods passed suite-Report"> (show)</a> <!-- show-methods passed suite-Report -->
+                    </span>
+                    <div class="method-list-content passed suite-Report">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Report" title="TestScript.TC_1" hash-for-method="Test_1">Test_1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Report" title="TestScript.TC_10" hash-for-method="Test_10">Test_10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Report" title="TestScript.TC_11" hash-for-method="Test_11">Test_11</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Report" title="TestScript.TC_8" hash-for-method="Test_2">Test_2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Report" title="TestScript.TC_7" hash-for-method="Test_2">Test_2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Report" title="TestScript.TC_2" hash-for-method="Test_2">Test_2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Report" title="TestScript.TC_3" hash-for-method="Test_3">Test_3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Report" title="TestScript.TC_4" hash-for-method="Test_4">Test_4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Report" title="TestScript.TC_5" hash-for-method="Test_5">Test_5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Report" title="TestScript.TC_6" hash-for-method="Test_6">Test_6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Report" title="TestScript.TC_9" hash-for-method="Test_9">Test_9</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Report -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Report" class="panel Report">
+          <div class="suite-Report-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.TC_4</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_4">
+                  </a> <!-- Test_4 -->
+                  <span class="method-name">Test_4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Report-class-passed -->
+          <div class="suite-Report-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.TC_10</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_10">
+                  </a> <!-- Test_10 -->
+                  <span class="method-name">Test_10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Report-class-passed -->
+          <div class="suite-Report-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.TC_11</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_11">
+                  </a> <!-- Test_11 -->
+                  <span class="method-name">Test_11</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Report-class-passed -->
+          <div class="suite-Report-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.TC_9</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_9">
+                  </a> <!-- Test_9 -->
+                  <span class="method-name">Test_9</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Report-class-passed -->
+          <div class="suite-Report-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.TC_5</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_5">
+                  </a> <!-- Test_5 -->
+                  <span class="method-name">Test_5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Report-class-passed -->
+          <div class="suite-Report-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.TC_8</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_2">
+                  </a> <!-- Test_2 -->
+                  <span class="method-name">Test_2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Report-class-passed -->
+          <div class="suite-Report-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.TC_1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_1">
+                  </a> <!-- Test_1 -->
+                  <span class="method-name">Test_1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Report-class-passed -->
+          <div class="suite-Report-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.TC_2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_2">
+                  </a> <!-- Test_2 -->
+                  <span class="method-name">Test_2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Report-class-passed -->
+          <div class="suite-Report-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.TC_7</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_2">
+                  </a> <!-- Test_2 -->
+                  <span class="method-name">Test_2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Report-class-passed -->
+          <div class="suite-Report-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.TC_6</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_6">
+                  </a> <!-- Test_6 -->
+                  <span class="method-name">Test_6</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Report-class-passed -->
+          <div class="suite-Report-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.TC_3</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_3">
+                  </a> <!-- Test_3 -->
+                  <span class="method-name">Test_3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Report-class-passed -->
+        </div> <!-- panel Report -->
+        <div panel-name="test-xml-Report" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Stepa\Workspace\WebDriverProject\test_suites\Report.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Report&quot;&gt;
+  &lt;test name=&quot;Report Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestScript.TC_1&quot;/&gt;
+      &lt;class name=&quot;TestScript.TC_2&quot;/&gt;
+      &lt;class name=&quot;TestScript.TC_3&quot;/&gt;
+      &lt;class name=&quot;TestScript.TC_4&quot;/&gt;
+      &lt;class name=&quot;TestScript.TC_5&quot;/&gt;
+      &lt;class name=&quot;TestScript.TC_6&quot;/&gt;
+      &lt;class name=&quot;TestScript.TC_8&quot;/&gt;
+      &lt;class name=&quot;TestScript.TC_7&quot;/&gt;
+      &lt;class name=&quot;TestScript.TC_9&quot;/&gt;
+      &lt;class name=&quot;TestScript.TC_10&quot;/&gt;
+      &lt;class name=&quot;TestScript.TC_11&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Report Test --&gt;
+&lt;/suite&gt; &lt;!-- Report --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Report" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Report</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Report Test (11 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Report" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Report</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Report" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Report</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Report');
+function tableData_Report() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Test_2')
+data.setCell(0, 2, 'TestScript.TC_2')
+data.setCell(0, 3, 25624);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Test_2')
+data.setCell(1, 2, 'TestScript.TC_8')
+data.setCell(1, 3, 21263);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Test_6')
+data.setCell(2, 2, 'TestScript.TC_6')
+data.setCell(2, 3, 19320);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Test_11')
+data.setCell(3, 2, 'TestScript.TC_11')
+data.setCell(3, 3, 14134);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Test_5')
+data.setCell(4, 2, 'TestScript.TC_5')
+data.setCell(4, 3, 12501);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Test_1')
+data.setCell(5, 2, 'TestScript.TC_1')
+data.setCell(5, 3, 11776);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Test_3')
+data.setCell(6, 2, 'TestScript.TC_3')
+data.setCell(6, 3, 11166);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Test_4')
+data.setCell(7, 2, 'TestScript.TC_4')
+data.setCell(7, 3, 10391);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Test_2')
+data.setCell(8, 2, 'TestScript.TC_7')
+data.setCell(8, 3, 10303);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Test_10')
+data.setCell(9, 2, 'TestScript.TC_10')
+data.setCell(9, 3, 9979);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Test_9')
+data.setCell(10, 2, 'TestScript.TC_9')
+data.setCell(10, 3, 9634);
+window.suiteTableData['Report']= { tableData: data, tableDiv: 'times-div-Report'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Report">
+              </div> <!-- times-div-Report -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Report" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Report</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Report" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Report" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.TC_1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Test_1</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.TC_2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Test_2</span>
+                <span class="method-start">11780 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.TC_3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Test_3</span>
+                <span class="method-start">37407 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.TC_4</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Test_4</span>
+                <span class="method-start">48575 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.TC_5</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Test_5</span>
+                <span class="method-start">58968 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.TC_6</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Test_6</span>
+                <span class="method-start">71471 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.TC_8</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Test_2</span>
+                <span class="method-start">90793 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.TC_7</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Test_2</span>
+                <span class="method-start">112057 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.TC_9</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Test_9</span>
+                <span class="method-start">122380 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.TC_10</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Test_10</span>
+                <span class="method-start">132015 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.TC_11</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Test_11</span>
+                <span class="method-start">141995 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
