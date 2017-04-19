@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="TestScript.TC_11">
+      <class name="TestsPckgOne.TC_8">
         <methods>
-          <include name="Test_11"/>
+          <include name="Test_8"/>
         </methods>
-      </class> <!-- TestScript.TC_11 -->
+      </class> <!-- TestsPckgOne.TC_8 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

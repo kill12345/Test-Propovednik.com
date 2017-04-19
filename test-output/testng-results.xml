@@ -1,77 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Report" duration-ms="156152" started-at="2017-04-17T22:17:53Z" finished-at="2017-04-17T22:20:29Z">
+  <suite name="Default suite" duration-ms="20656" started-at="2017-04-19T06:26:18Z" finished-at="2017-04-19T06:26:38Z">
     <groups>
     </groups>
-    <test name="Report Test" duration-ms="156152" started-at="2017-04-17T22:17:53Z" finished-at="2017-04-17T22:20:29Z">
-      <class name="TestScript.TC_6">
-        <test-method status="PASS" signature="Test_6()[pri:0, instance:TestScript.TC_6@523884b2]" name="Test_6" duration-ms="19320" started-at="2017-04-17T15:19:05Z" finished-at="2017-04-17T15:19:24Z">
+    <test name="Default test" duration-ms="20656" started-at="2017-04-19T06:26:18Z" finished-at="2017-04-19T06:26:38Z">
+      <class name="TestsPckgOne.TC_8">
+        <test-method status="FAIL" signature="Test_8()[pri:0, instance:TestsPckgOne.TC_8@cc285f4]" name="Test_8" duration-ms="20606" started-at="2017-04-18T23:26:18Z" finished-at="2017-04-18T23:26:38Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to decode response from marionette
+Build info: version: 'unknown', revision: '5234b32', time: '2017-03-10 09:00:17 -0800'
+System info: host: 'STEPA-PC', ip: '192.168.0.5', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_112'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160922113459, version=49.0.1, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=3360, browserVersion=49.0.1, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop}]
+Session ID: 62413b5a-b71a-402e-8a79-70d7a9497ad3
+*** Element info: {Using=xpath, value=/html/body/div[4]/div[3]/div/div/div[2]/div[2]/div[2]/div[2]/div[1]/button[1]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: 'unknown', revision: '5234b32', time: '2017-03-10 09:00:17 -0800'
+System info: host: 'STEPA-PC', ip: '192.168.0.5', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_112'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160922113459, version=49.0.1, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=3360, browserVersion=49.0.1, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop}]
+Session ID: 62413b5a-b71a-402e-8a79-70d7a9497ad3
+*** Element info: {Using=xpath, value=/html/body/div[4]/div[3]/div/div/div[2]/div[2]/div[2]/div[2]/div[1]/button[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:43)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at TestsPckgOne.TC_8.Test_8(TC_8.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test_6 -->
-      </class> <!-- TestScript.TC_6 -->
-      <class name="TestScript.TC_5">
-        <test-method status="PASS" signature="Test_5()[pri:0, instance:TestScript.TC_5@4501b7af]" name="Test_5" duration-ms="12501" started-at="2017-04-17T15:18:52Z" finished-at="2017-04-17T15:19:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_5 -->
-      </class> <!-- TestScript.TC_5 -->
-      <class name="TestScript.TC_4">
-        <test-method status="PASS" signature="Test_4()[pri:0, instance:TestScript.TC_4@28d25987]" name="Test_4" duration-ms="10391" started-at="2017-04-17T15:18:42Z" finished-at="2017-04-17T15:18:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_4 -->
-      </class> <!-- TestScript.TC_4 -->
-      <class name="TestScript.TC_3">
-        <test-method status="PASS" signature="Test_3()[pri:0, instance:TestScript.TC_3@59fa1d9b]" name="Test_3" duration-ms="11166" started-at="2017-04-17T15:18:31Z" finished-at="2017-04-17T15:18:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_3 -->
-      </class> <!-- TestScript.TC_3 -->
-      <class name="TestScript.TC_2">
-        <test-method status="PASS" signature="Test_2()[pri:0, instance:TestScript.TC_2@d8355a8]" name="Test_2" duration-ms="25624" started-at="2017-04-17T15:18:05Z" finished-at="2017-04-17T15:18:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_2 -->
-      </class> <!-- TestScript.TC_2 -->
-      <class name="TestScript.TC_1">
-        <test-method status="PASS" signature="Test_1()[pri:0, instance:TestScript.TC_1@224edc67]" name="Test_1" duration-ms="11776" started-at="2017-04-17T15:17:53Z" finished-at="2017-04-17T15:18:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_1 -->
-      </class> <!-- TestScript.TC_1 -->
-      <class name="TestScript.TC_10">
-        <test-method status="PASS" signature="Test_10()[pri:0, instance:TestScript.TC_10@3ffc5af1]" name="Test_10" duration-ms="9979" started-at="2017-04-17T15:20:05Z" finished-at="2017-04-17T15:20:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_10 -->
-      </class> <!-- TestScript.TC_10 -->
-      <class name="TestScript.TC_11">
-        <test-method status="PASS" signature="Test_11()[pri:0, instance:TestScript.TC_11@5e5792a0]" name="Test_11" duration-ms="14134" started-at="2017-04-17T15:20:15Z" finished-at="2017-04-17T15:20:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_11 -->
-      </class> <!-- TestScript.TC_11 -->
-      <class name="TestScript.TC_9">
-        <test-method status="PASS" signature="Test_9()[pri:0, instance:TestScript.TC_9@29774679]" name="Test_9" duration-ms="9634" started-at="2017-04-17T15:19:56Z" finished-at="2017-04-17T15:20:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_9 -->
-      </class> <!-- TestScript.TC_9 -->
-      <class name="TestScript.TC_8">
-        <test-method status="PASS" signature="Test_2()[pri:0, instance:TestScript.TC_8@5b275dab]" name="Test_2" duration-ms="21263" started-at="2017-04-17T15:19:24Z" finished-at="2017-04-17T15:19:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_2 -->
-      </class> <!-- TestScript.TC_8 -->
-      <class name="TestScript.TC_7">
-        <test-method status="PASS" signature="Test_2()[pri:0, instance:TestScript.TC_7@61832929]" name="Test_2" duration-ms="10303" started-at="2017-04-17T15:19:45Z" finished-at="2017-04-17T15:19:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_2 -->
-      </class> <!-- TestScript.TC_7 -->
-    </test> <!-- Report Test -->
-  </suite> <!-- Report -->
+        </test-method> <!-- Test_8 -->
+      </class> <!-- TestsPckgOne.TC_8 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
