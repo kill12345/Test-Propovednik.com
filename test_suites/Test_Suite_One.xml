@@ -6,10 +6,17 @@
 		<classes>
 
 
-			<class name="TestScript.TC_2" />
-			<class name="TestScript.TC_1" />
-			<class name="TestScript.TC_9" />
-			<class name="TestScript.TC_8" />
+			<class name="TestsPckgOne.TC_1" />
+			<class name="TestsPckgOne.TC_2" />
+			<class name="TestsPckgOne.TC_3" />
+			<class name="TestsPckgOne.TC_4" />
+			<class name="TestsPckgOne.TC_6" />
+			<class name="TestsPckgOne.TC_5" />
+			<class name="TestsPckgOne.TC_7" />
+			<class name="TestsPckgOne.TC_8" />
+			<class name="TestsPckgOne.TC_9" />
+			<class name="TestsPckgOne.TC_11" />
+			<class name="TestsPckgOne.TC_10" />
 
 
 		</classes>

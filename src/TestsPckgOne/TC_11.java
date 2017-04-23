@@ -8,49 +8,47 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
-	import org.openqa.selenium.WebDriver;
-	import org.openqa.selenium.WebElement;
-	import org.openqa.selenium.firefox.FirefoxDriver;
-	import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
 
-	public class TC_11 {
+import base.BaseClass;
+import base.TopMenuUtility;
+
+	public class TC_11 extends BaseClass{
 		
 		@Test
 		public void Test_11() throws InterruptedException, IOException {
 			
-			System.setProperty("webdriver.gecko.driver", "C:/Workspace/browsers/geckodriver.exe");
+    String url = "http://propovednik.com";
 			
+	String text_case_id = "1";
 			
-           WebDriver driver = new FirefoxDriver();
-			
-			
-			String url = "http://propovednik.com";
-			
-			String text_case_id = "1";
-			  
 			Properties property = new Properties();
 			
-			
-		    FileInputStream objFile = new FileInputStream("C:/Users/Stepa/Workspace/WebDriverProject/src1/property.file");
+		    FileInputStream objFile = new FileInputStream("C:/Users/Stepa/Workspace/WebDriverProject/resources/main.properties"); // TODO: FIX THIS
 		    
 		    try {
 		    	property.load(objFile);
 		    	
 		    }catch (IOException e){
 		    	
-		     }	
+		    }
 		    
-		 
+		    System.setProperty("webdriver.gecko.driver", property.getProperty("GECKODRIVERLOCATION"));
+		    
+		    System.setProperty("webdriver.chrome.driver", property.getProperty("CHROMEDRIVERLOCATION"));
+		    
+		    WebDriver driver = getDriverInstance();
+		    
 		    driver.get(property.getProperty("baseURL"));
-
-			driver.manage().window().maximize();
+		    
 			
-			
-			driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[1]/div[2]/ul/li[1]/a")).click();
-			
+		    TopMenuUtility.clickMenuItemByLinkText(driver, "Медиатека");
+		    
 			Thread.sleep(1000);
 			
-			driver.findElement(By.xpath("/html/body/div[4]/div[3]/div/div/div[2]/ul/li[1]/div[1]/a")).click();
+			TopMenuUtility.clickMenuItemByLinkText(driver, "Аудио Библия");
 			
 			Thread.sleep(1000);
 			
@@ -63,7 +61,12 @@ import org.openqa.selenium.By;
 			
 					CheckButton.click();
 					
-					driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[2]/div/div[2]/div/div[2]/div/button[1]")).click();
+					Thread.sleep(1000);
+					
+					
+					
+		
+					
 					
 					String  CheckButtonDellite = CheckButton.getAttribute("onclick");
 					

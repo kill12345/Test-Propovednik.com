@@ -6,34 +6,27 @@ import java.util.Properties;
 
 public class PropertiesUtility {
 
-	public static void main(String[] args) {
-
-		String Go = "C:/Users/Stepa/Workspace/WebDriverProject/src1/property.file";
-		FileInputStream fileInputStream;
-
-		// инициализируем �?пециальный объект Properties
-		// типа Hashtable дл�? удобной работы �? данными
-
-		Properties prop = new Properties();
-
+	static String propertiesFilePath = "./resources/main.properties";
+	static Properties property = new Properties();
+	
+	private static void loadProperties() {
 		try {
-			// обращаем�?�? к файлу и получаем данные
-			fileInputStream = new FileInputStream(Go);
-			prop.load(fileInputStream);
-
-			String site = prop.getProperty("baseURL");
-
-			// печатаем полученные данные в кон�?оль
-
-			System.out.println("baseURL: " + site
-
-			);
+			FileInputStream objFile = new FileInputStream(propertiesFilePath);
+			property.load(objFile);
 
 		} catch (IOException e) {
-			System.out.println("Ошибка в программе: файл " + Go + " не обнаружено");
-			e.printStackTrace();
-		}
 
+		}
 	}
 
+	     /**
+	        * Reads property value from default properties file.
+	        * @param propertyName
+	        * @return
+	     */
+	public static String getProperty(String propertyName){;
+		loadProperties();
+		return property.getProperty(propertyName);
+	}
+	
 }

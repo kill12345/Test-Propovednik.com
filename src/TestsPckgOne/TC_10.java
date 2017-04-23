@@ -2,27 +2,47 @@ package TestsPckgOne;
 
 import static org.testng.Assert.assertTrue;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
-public class TC_10 {
+import base.BaseClass;
+
+public class TC_10 extends BaseClass {
 	
 	@Test
-	public void Test_10() throws InterruptedException {
+	public void Test_10() throws InterruptedException, IOException {
 
+		
+		
+		
 		String url = "http://propovednik.com";
 		String text_case_id = "1";
 
 	
-	
-	System.setProperty("webdriver.gecko.driver", "C:/Workspace/browsers/geckodriver.exe");
-	
-	WebDriver driver = new FirefoxDriver();
-
-	driver.get("http://propovednik.com");
+        Properties property = new Properties();
+		
+	    FileInputStream objFile = new FileInputStream("C:/Users/Stepa/Workspace/WebDriverProject/resources/main.properties"); // TODO: FIX THIS
+	    
+	    try {
+	    	property.load(objFile);
+	    	
+	    }catch (IOException e){
+	    	
+	    }
+	    
+	    System.setProperty("webdriver.gecko.driver", property.getProperty("GECKODRIVERLOCATION"));
+	    
+	    System.setProperty("webdriver.chrome.driver", property.getProperty("CHROMEDRIVERLOCATION"));
+	    
+	    WebDriver driver = getDriverInstance();
+	    
+	    driver.get(property.getProperty("baseURL"));
 	
 	WebElement TextValidation = driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[1]/div[1]/h1"));
 	TextValidation.click();

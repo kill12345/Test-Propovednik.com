@@ -2,45 +2,23 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20656" started-at="2017-04-19T06:26:18Z" finished-at="2017-04-19T06:26:38Z">
+  <suite name="Default suite" duration-ms="10397" started-at="2017-04-23T07:24:42Z" finished-at="2017-04-23T07:24:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20656" started-at="2017-04-19T06:26:18Z" finished-at="2017-04-19T06:26:38Z">
-      <class name="TestsPckgOne.TC_8">
-        <test-method status="FAIL" signature="Test_8()[pri:0, instance:TestsPckgOne.TC_8@cc285f4]" name="Test_8" duration-ms="20606" started-at="2017-04-18T23:26:18Z" finished-at="2017-04-18T23:26:38Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+    <test name="Default test" duration-ms="10397" started-at="2017-04-23T07:24:42Z" finished-at="2017-04-23T07:24:53Z">
+      <class name="TestsPckgOne.TC_02">
+        <test-method status="FAIL" signature="Test_2_Verify_Download_Button()[pri:0, instance:TestsPckgOne.TC_02@cc285f4]" name="Test_2_Verify_Download_Button" duration-ms="10359" started-at="2017-04-23T00:24:42Z" finished-at="2017-04-23T00:24:53Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Failed to decode response from marionette
-Build info: version: 'unknown', revision: '5234b32', time: '2017-03-10 09:00:17 -0800'
-System info: host: 'STEPA-PC', ip: '192.168.0.5', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_112'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160922113459, version=49.0.1, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=3360, browserVersion=49.0.1, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop}]
-Session ID: 62413b5a-b71a-402e-8a79-70d7a9497ad3
-*** Element info: {Using=xpath, value=/html/body/div[4]/div[3]/div/div/div[2]/div[2]/div[2]/div[2]/div[1]/button[1]}]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
-Build info: version: 'unknown', revision: '5234b32', time: '2017-03-10 09:00:17 -0800'
-System info: host: 'STEPA-PC', ip: '192.168.0.5', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_112'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160922113459, version=49.0.1, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=3360, browserVersion=49.0.1, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop}]
-Session ID: 62413b5a-b71a-402e-8a79-70d7a9497ad3
-*** Element info: {Using=xpath, value=/html/body/div[4]/div[3]/div/div/div[2]/div[2]/div[2]/div[2]/div[1]/button[1]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:99)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:43)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at TestsPckgOne.TC_8.Test_8(TC_8.java:58)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at org.testng.Assert.assertTrue(Assert.java:51)
+	at TestsPckgOne.TC_02.Test_2_Verify_Download_Button(TC_02.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -68,11 +46,11 @@ Session ID: 62413b5a-b71a-402e-8a79-70d7a9497ad3
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test_8 -->
-      </class> <!-- TestsPckgOne.TC_8 -->
+        </test-method> <!-- Test_2_Verify_Download_Button -->
+      </class> <!-- TestsPckgOne.TC_02 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
