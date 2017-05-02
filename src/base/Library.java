@@ -136,4 +136,33 @@ public class Library {
 		
 		return isPresent;
 	}
+	
+	public void isAddFolderToPlaylistButtonPresent(WebDriver driver, String albumName){
+		
+	}
+	
+	public void clickAddFolderToPlaylistButton(WebDriver driver, String folderName){
+		List<WebElement> itemsList = getItems(driver);
+		
+		for (int i = 0; i < itemsList.size(); i++) {
+			WebElement itemWebElement = itemsList.get(i);
+			String currentItemName = itemWebElement.getText();
+			System.out.println(currentItemName);
+			
+			if(currentItemName.equals(folderName)){
+				System.out.println(folderName + " is found! :)");
+				
+				WebElement itemPrecedingSibling = itemWebElement.findElement(By.xpath(".//parent::div/parent::li/div[2]"));
+				
+				// click add folder to playlist button
+				WebElement addFolderToPlaylistButton = itemPrecedingSibling.findElement(By.xpath(".//a[2]"));
+				addFolderToPlaylistButton.click();
+				break;
+			}
+		}
+	}
+	
+	public void getBreadcrumb(){
+		// TODO:
+	}
 }

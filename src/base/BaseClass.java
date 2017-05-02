@@ -7,8 +7,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class BaseClass {
 
 	public BaseClass(){
+		
 		System.setProperty("webdriver.gecko.driver", PropertiesUtility.getProperty("GECKODRIVERLOCATION"));
 	    System.setProperty("webdriver.chrome.driver", PropertiesUtility.getProperty("CHROMEDRIVERLOCATION"));
+	    
 	}
 	
 	public void driverClose(WebDriver driver){
@@ -17,12 +19,8 @@ public class BaseClass {
 	
 	public WebDriver getDriverInstance() throws InterruptedException {
 
-		// read from properties file
-		// check value of browser variable
-		// if its a firefox -> start firefox
-		// if its a chrome -> start chrome
-
-		WebDriver driver = null;
+		
+   WebDriver driver = null;
 		
 		String browser = PropertiesUtility.getProperty("browser");
 		
@@ -44,13 +42,18 @@ public class BaseClass {
 
 	}
 	
-	public void pause(int seconds){
+	public static void pause(int seconds){
 		try {
 			Thread.sleep(seconds * 1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
+	
+	
+	
+	
+	
 	
 	public void navigateToMainPage(WebDriver driver){
 		driver.get(PropertiesUtility.getProperty("baseURL"));

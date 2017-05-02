@@ -1,8 +1,10 @@
 package base;
 
+import org.openqa.selenium.WebDriver;
+
 public class Playlist {
 
-	public void clickShareButton(){
+	public void getAllTracksFromPlaylist(){
 		
 	}
 	
@@ -10,15 +12,23 @@ public class Playlist {
 		
 	}
 	
-	public void removeTrackFromPlaylist_BySongName(String songName){
+	public void clickShareButton(){
 		
 	}
 	
-	public void removeTrackFromPlaylist_ByIndex(int trackPosition){
+	public void deleteTrackFromPlaylist_ByTrackName(WebDriver driver, String trackName){
 		
 	}
 	
-	public void getAllTrackNames(){
+	public void deleteTrackFromPlaylist_ByTrackIndex(WebDriver driver, int trackIndex){
+		
+	}
+	
+	public void getCurrentlyActiveTrackName(){
+		
+	}
+	
+	public void getCurrentlyActiveTrackIndex(){
 		
 	}
 	
