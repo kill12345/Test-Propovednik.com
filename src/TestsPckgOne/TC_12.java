@@ -68,7 +68,7 @@ public class TC_12  extends BaseClass {
 			String folderName = folderWebElement.getText();
 			System.out.println(folderName);
 			
-			if(folderName.equals("Литература")){
+			if(folderName.equals("Братские, пресвитерские")){
 				result = true;
 				break;
 			}

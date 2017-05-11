@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="58684" started-at="2017-05-02T06:17:30Z" finished-at="2017-05-02T06:18:29Z">
+  <suite name="Default suite" duration-ms="11170" started-at="2017-05-11T03:36:28Z" finished-at="2017-05-11T03:36:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="58684" started-at="2017-05-02T06:17:30Z" finished-at="2017-05-02T06:18:29Z">
-      <class name="TestsPckgOne.TC_15">
-        <test-method status="PASS" signature="f()[pri:0, instance:TestsPckgOne.TC_15@4b5d6a01]" name="f" duration-ms="58653" started-at="2017-05-01T23:17:30Z" finished-at="2017-05-01T23:18:29Z">
+    <test name="Default test" duration-ms="11170" started-at="2017-05-11T03:36:28Z" finished-at="2017-05-11T03:36:39Z">
+      <class name="TestsPckgOne.TC_16">
+        <test-method status="PASS" signature="Test_16_Verify_PlayList()[pri:0, instance:TestsPckgOne.TC_16@c038203]" name="Test_16_Verify_PlayList" duration-ms="11137" started-at="2017-05-10T20:36:28Z" finished-at="2017-05-10T20:36:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- TestsPckgOne.TC_15 -->
+        </test-method> <!-- Test_16_Verify_PlayList -->
+      </class> <!-- TestsPckgOne.TC_16 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

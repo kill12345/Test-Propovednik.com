@@ -1,10 +1,13 @@
 package TestsPckgOne;
 
+import static org.testng.Assert.assertTrue;
+
 import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import base.AudioPlayer;
 import base.BaseClass;
+
 
 public class TC_03  extends BaseClass {
 
@@ -24,16 +27,17 @@ public class TC_03  extends BaseClass {
 		pause(1);
 		
 		audioPlayer.clickPreviousTrackButton(driver);
-		
 		audioPlayer.clickNextTrackButton(driver);
-		
 		audioPlayer.clickPauseButton(driver);
-		
 		audioPlayer.getCurrectlyPlayingTrackName(driver);
-		
 		audioPlayer.clickRepeatButton(driver);
 		
-		driver.close();
+		assertTrue(audioPlayer.isPlayButtonPresent(driver));
+		assertTrue(audioPlayer.isPauseButtonPresent(driver));
+		audioPlayer.isEnableVolumeButtonShown(driver);
+		assertTrue(audioPlayer.isDisableVolumeButtonShown(driver));
+		assertTrue(audioPlayer.isRepeatButtonEnabled(driver));
+		
 
 	}
 		

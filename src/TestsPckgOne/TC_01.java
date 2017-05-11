@@ -13,6 +13,7 @@ import base.TopMenuUtility;
 public class TC_01 extends BaseClass {
 
 	@Test
+	
 	public void Test_1_Verify_Items_And_Its_Icons() throws InterruptedException, IOException {
 		
 	    String blagovestie = "Благовестие";
@@ -41,8 +42,9 @@ public class TC_01 extends BaseClass {
 		assertTrue(library.doesItemHaveAlbumIcon(driver, otchet));
 		
 		driverClose(driver);
+		
 	}
-
+	
 }
 		
 

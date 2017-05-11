@@ -1,8 +1,10 @@
 package base;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
 
 public class BaseClass {
 
@@ -50,7 +52,25 @@ public class BaseClass {
 		}
 	}
 	
+	public static void add_traks_to_playlist(WebDriver driver){
+	    TopMenuUtility.clickMenuItemByLinkText(driver, "Медиатека");
+	     pause(1); 
+		TopMenuUtility.clickMenuItemByLinkText(driver, "Музыка");
+		 pause(1);
+		driver.findElement(By.xpath("//*[@id='track-list']/div[2]/ul/li[8]/div[2]/a[1]/img")).click();
+	}
+		
+		
+		public static void Currently_playing(WebDriver driver ){
+			AudioPlayer audioPlayer = new AudioPlayer();
+		System.out.println("Currently playing: " + audioPlayer.getCurrectlyPlayingTrackName(driver));
+		}
+		
+		
+		
+		
 	
+
 	
 	
 	

@@ -25,39 +25,30 @@ public class TC_15 extends BaseClass{
 		pause(1);
 		
 		Library library = new Library();
-		
-		library.clickListItem_ByName(driver, "Музыка");
-		
-		pause(1);
-		
-		// TODO: verify you are in correct folder after above click
-		
-		library.clickAddFolderToPlaylistButton(driver, "The Crossroads (2011)");
-		
-		pause(1);
-		
-		// TODO: verify tracks added to playlist
-		
 		AudioPlayer audioPlayer = new AudioPlayer();
+		library.clickListItem_ByName(driver, "Музыка");
+		pause(1);
+		
+		assertTrue(audioPlayer.VerifyYouAreInCorrectFolder(driver));
+		library.clickAddFolderToPlaylistButton(driver, "The Crossroads (2011)");
+		pause(1);
 		audioPlayer.clickPlayButton(driver);
-		
 		audioPlayer.clickNextTrackButton(driver);
 		audioPlayer.clickNextTrackButton(driver);
 		audioPlayer.clickNextTrackButton(driver);
 		
-		// TODO: verify item number 4 is active in the playlist
-		
+		BaseClass.Currently_playing(driver);
+		pause(1);
 		audioPlayer.clickPreviousTrackButton(driver);
-		
-		// TODO: verify item number 3 is active in the playlist
-		
+		BaseClass.Currently_playing(driver);
+		pause(1);
 		audioPlayer.clickPauseButton(driver);
-		
-		// TODO: verify isPauseButtonPresent() return true
-		
-		audioPlayer.clickPlayButton(driver);
-		
+		pause(1);
+		assertTrue(audioPlayer.isPauseButtonPresent(driver));
+		pause(1);
+		//audioPlayer.clickPlayButton(driver);
 		System.out.println("Currently playing: " + audioPlayer.getCurrectlyPlayingTrackName(driver));
-		assertTrue(audioPlayer.getCurrectlyPlayingTrackName(driver).equals("03 How Can You Not Know? - Music Studio IUCECB California, USA - The Crossroads"));
+		pause(1);
+		assertTrue(audioPlayer.getCurrectlyPlayingTrackName(driver).equals("02 Finding Happiness - Music Studio IUCECB California, USA - The Crossroads"));
 	}
 }
