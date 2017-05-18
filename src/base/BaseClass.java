@@ -52,6 +52,8 @@ public class BaseClass {
 		}
 	}
 	
+	// why did you add it to base class? i dont get it!
+	// it only adds crossroads album --> why?
 	public static void add_traks_to_playlist(WebDriver driver){
 	    TopMenuUtility.clickMenuItemByLinkText(driver, "Медиатека");
 	     pause(1); 
@@ -63,7 +65,7 @@ public class BaseClass {
 		
 		public static void Currently_playing(WebDriver driver ){
 			AudioPlayer audioPlayer = new AudioPlayer();
-		System.out.println("Currently playing: " + audioPlayer.getCurrectlyPlayingTrackName(driver));
+			System.out.println("Currently playing: " + audioPlayer.getCurrectlyPlayingTrackName(driver));
 		}
 		
 		

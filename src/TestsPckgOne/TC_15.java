@@ -1,7 +1,6 @@
 package TestsPckgOne;
 
 import static org.testng.Assert.assertTrue;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
@@ -40,12 +39,14 @@ public class TC_15 extends BaseClass{
 		BaseClass.Currently_playing(driver);
 		pause(1);
 		audioPlayer.clickPreviousTrackButton(driver);
-		BaseClass.Currently_playing(driver);
+	    BaseClass.Currently_playing(driver);
 		pause(1);
 		audioPlayer.clickPauseButton(driver);
 		pause(1);
 		assertTrue(audioPlayer.isPauseButtonPresent(driver));
 		pause(1);
+		assertTrue(audioPlayer.isPlayButtonPresent(driver));
+		assertTrue(audioPlayer.isElementPresent(driver));
 		//audioPlayer.clickPlayButton(driver);
 		System.out.println("Currently playing: " + audioPlayer.getCurrectlyPlayingTrackName(driver));
 		pause(1);
