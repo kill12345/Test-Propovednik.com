@@ -4,6 +4,8 @@ package TestsPckgOne;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.Random;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
@@ -17,16 +19,18 @@ public class TC_06 extends BaseClass {
 
 	public void Test_6() throws InterruptedException, IOException {
 
-        Properties property = new Properties();
-		
-	    FileInputStream objFile = new FileInputStream("C:/Users/Stepa/Workspace/WebDriverProject/resources/main.properties"); // TODO: FIX THIS
-	    
-	    try {
-	    	property.load(objFile);
+		String F = "/Users/stepanmisiruk/IdeaProjects/Test-Propovednik.com/resources/main.properties";
+
+		Properties property = new Properties();
+
+		FileInputStream objFile = new FileInputStream (F);
+
+	       try {
+	    	   property.load(objFile);
 	    	
-	    }catch (IOException e){
-	    	
-	    }
+	           }catch (IOException e) {
+
+		    }
 	    
 	    System.setProperty("webdriver.gecko.driver", property.getProperty("GECKODRIVERLOCATION"));
 	    
@@ -42,21 +46,15 @@ public class TC_06 extends BaseClass {
 
 		Thread.sleep(1000);
 
-		driver.findElement(By.id("mce-EMAIL")).sendKeys(property.getProperty("name"));
+		driver.findElement(By.id("mce-EMAIL")).sendKeys(genRandom() + property.getProperty("email"));
 
-		driver.findElement(By.id("mce-FNAME")).sendKeys(property.getProperty("last"));
+		driver.findElement(By.id("mce-FNAME")).sendKeys(genRandom() + property.getProperty("last"));
 
-		driver.findElement(By.id("mce-LNAME")).sendKeys(property.getProperty("email"));
+		driver.findElement(By.id("mce-LNAME")).sendKeys(genRandom() + property.getProperty("name"));
 
 		Thread.sleep(1000);
 
 		driver.findElement(By.id("mc-embedded-subscribe")).click();
-		
-	
-		
-		
-		
-		
 
 		Thread.sleep(2000);
 
@@ -64,10 +62,15 @@ public class TC_06 extends BaseClass {
 
 		Thread.sleep(2000);
 
-		System.out.println("Subscrabe success");
+		System.out.println("Subscribe success");
 
-		driver.quit();
+		driverClose(driver);
 
 	}
 
+	private int genRandom(){
+		Random rand = new Random();
+		int  n = rand.nextInt(9999) + 1;
+		return n;
+	}
 }

@@ -1,14 +1,14 @@
 package TestsPckgOne;
-import static org.testng.Assert.assertTrue;
-
-import java.io.IOException;
-
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.Test;
 
 import base.BaseClass;
 import base.Library;
 import base.TopMenuUtility;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import java.io.IOException;
+
+import static org.testng.Assert.assertTrue;
 
 public class TC_01 extends BaseClass {
 
@@ -20,7 +20,7 @@ public class TC_01 extends BaseClass {
 	    String otchet = "1998 Отчет благовестников";
 		
 		WebDriver driver = getDriverInstance();
-	    
+
 	    navigateToMainPage(driver);
 		
 		TopMenuUtility.clickMenuItemByLinkText(driver, "Медиатека");

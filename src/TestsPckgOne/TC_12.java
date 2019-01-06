@@ -25,9 +25,12 @@ public class TC_12  extends BaseClass {
 		// "./browsers/geckodriver.exe"); // read about absolute and relative
 		// path
 		Properties property = new Properties();
-		
-	    FileInputStream objFile = new FileInputStream("C:/Users/Stepa/Workspace/WebDriverProject/resources/main.properties"); // TODO: FIX THIS
-	    
+
+
+		String F = "/Users/stepanmisiruk/IdeaProjects/Test-Propovednik.com/resources/main.properties";
+		FileInputStream objFile = new FileInputStream(F);
+
+
 	    try {
 	    	property.load(objFile);
 	    	
@@ -75,8 +78,8 @@ public class TC_12  extends BaseClass {
 		}
 
 		assertTrue(result, "Was not able to find Литература in the list");
-		
-		driver.quit();
+
+		driverClose(driver);
 
 	}
 }

@@ -20,13 +20,14 @@ import base.TopMenuUtility;
 		@Test
 		public void Test_11() throws InterruptedException, IOException {
 			
-    String url = "http://propovednik.com";
+    		String url = "http://propovednik.com";
 			
-	String text_case_id = "1";
+			String text_case_id = "1";
 			
 			Properties property = new Properties();
-			
-		    FileInputStream objFile = new FileInputStream("C:/Users/Stepa/Workspace/WebDriverProject/resources/main.properties"); // TODO: FIX THIS
+
+			String F = "/Users/stepanmisiruk/IdeaProjects/Test-Propovednik.com/resources/main.properties";
+			FileInputStream objFile = new FileInputStream(F);
 		    
 		    try {
 		    	property.load(objFile);
@@ -63,11 +64,6 @@ import base.TopMenuUtility;
 					
 					Thread.sleep(1000);
 					
-					
-					
-		
-					
-					
 					String  CheckButtonDellite = CheckButton.getAttribute("onclick");
 					
 					assertTrue(CheckButtonDellite.equals("clearPlaylist();"));
@@ -84,20 +80,8 @@ import base.TopMenuUtility;
 
 					}
 
-					driver.quit();
+					driverClose(driver);
 				}
-
-				
-					
-					
-
-
-		
-		
-		
-		
-	
-	
 
 }
 	

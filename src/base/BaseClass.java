@@ -19,7 +19,8 @@ public class BaseClass {
 		driver.quit();
 	}
 	
-	public WebDriver getDriverInstance() throws InterruptedException {
+	public WebDriver getDriverInstance()
+			throws InterruptedException {
 
 		
    WebDriver driver = null;
@@ -54,14 +55,16 @@ public class BaseClass {
 	
 	// why did you add it to base class? i dont get it!
 	// it only adds crossroads album --> why?
+
 	public static void add_traks_to_playlist(WebDriver driver){
 	    TopMenuUtility.clickMenuItemByLinkText(driver, "Медиатека");
 	     pause(1); 
 		TopMenuUtility.clickMenuItemByLinkText(driver, "Музыка");
 		 pause(1);
-		driver.findElement(By.xpath("//*[@id='track-list']/div[2]/ul/li[8]/div[2]/a[1]/img")).click();
+		driver.findElement(By.xpath(" //*[@id='track-list']/div[2]/ul/li[9]/div[2]/a[3]/img")).click();
+                //*[@id='track-list']/div[2]/ul/li[8]/div[2]/a[1]/img
 	}
-		
+
 		
 		public static void Currently_playing(WebDriver driver ){
 			AudioPlayer audioPlayer = new AudioPlayer();

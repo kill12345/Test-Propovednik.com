@@ -23,7 +23,7 @@ public class TC_04 extends BaseClass{
 		// path
         Properties property = new Properties();
 		
-	    FileInputStream objFile = new FileInputStream("C:/Users/Stepa/Workspace/WebDriverProject/resources/main.properties"); // TODO: FIX THIS
+	    FileInputStream objFile = new FileInputStream("/Users/stepanmisiruk/IdeaProjects/Test-Propovednik.com/resources/main.properties");
 	    
 	    try {
 	    	property.load(objFile);
@@ -31,21 +31,16 @@ public class TC_04 extends BaseClass{
 	    }catch (IOException e){
 	    	
 	    }
-	    
-	    System.setProperty("webdriver.gecko.driver", property.getProperty("GECKODRIVERLOCATION"));
-	    
-	    System.setProperty("webdriver.chrome.driver", property.getProperty("CHROMEDRIVERLOCATION"));
 
+	    System.setProperty("webdriver.gecko.driver", property.getProperty("GECKODRIVERLOCATION"));
+		System.setProperty("webdriver.chrome.driver", property.getProperty("CHROMEDRIVERLOCATION"));
 		WebDriver driver = getDriverInstance();
-		
 		driver.get(property.getProperty("baseURL"));
-		
-        WebElement PageElement = driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[1]/div[1]/h1"));
+		WebElement PageElement = driver.findElement(By.xpath("/html/body/div[4]/div[1]/div[1]/div[1]/h1"));
        
-		
 		System.out.println(PageElement.getText());
 
-		driver.quit();
+		driverClose(driver);
 
 	}
 

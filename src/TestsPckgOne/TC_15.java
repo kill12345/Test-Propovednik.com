@@ -31,7 +31,7 @@ public class TC_15 extends BaseClass{
 		assertTrue(audioPlayer.VerifyYouAreInCorrectFolder(driver));
 		library.clickAddFolderToPlaylistButton(driver, "The Crossroads (2011)");
 		pause(1);
-		audioPlayer.clickPlayButton(driver);
+		//audioPlayer.clickPlayButton(driver);
 		audioPlayer.clickNextTrackButton(driver);
 		audioPlayer.clickNextTrackButton(driver);
 		audioPlayer.clickNextTrackButton(driver);
@@ -51,5 +51,7 @@ public class TC_15 extends BaseClass{
 		System.out.println("Currently playing: " + audioPlayer.getCurrectlyPlayingTrackName(driver));
 		pause(1);
 		assertTrue(audioPlayer.getCurrectlyPlayingTrackName(driver).equals("02 Finding Happiness - Music Studio IUCECB California, USA - The Crossroads"));
+
+		driverClose(driver);
 	}
 }

@@ -26,9 +26,12 @@ public class TC_10 extends BaseClass {
 
 	
         Properties property = new Properties();
-		
-	    FileInputStream objFile = new FileInputStream("C:/Users/Stepa/Workspace/WebDriverProject/resources/main.properties"); // TODO: FIX THIS
-	    
+
+
+		String F = "/Users/stepanmisiruk/IdeaProjects/Test-Propovednik.com/resources/main.properties";
+		FileInputStream objFile = new FileInputStream(F);
+
+
 	    try {
 	    	property.load(objFile);
 	    	
@@ -63,7 +66,7 @@ public class TC_10 extends BaseClass {
 
 	}
 
-	driver.quit();
+		driverClose(driver);
 }
 
 }

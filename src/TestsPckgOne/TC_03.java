@@ -37,8 +37,8 @@ public class TC_03  extends BaseClass {
 		audioPlayer.isEnableVolumeButtonShown(driver);
 		assertTrue(audioPlayer.isDisableVolumeButtonShown(driver));
 		assertTrue(audioPlayer.isRepeatButtonEnabled(driver));
-		
 
+		driverClose(driver);
 	}
 		
 }

@@ -54,17 +54,9 @@ public class TC_16 extends BaseClass {
 	   playlist.clickListItem_ByName(driver, itemName);
 	   playlist.clickShareButton(driver);
 	   playlist.clickResetButton(driver);
+
+		driverClose(driver);
 	   
-		
-	   
-	}
-	
-	@Test
-	public void A(){
-		System.out.println(reverseString("Artur"));
-	
-		//List<Integer> numbers = new ArrayList<Integer>();
-		//List<String> names = new ArrayList<String>();
 	}
 	
 	public String reverseString(String str){

@@ -19,9 +19,10 @@ public class TC_09 extends BaseClass {
 	public void Test_9() throws InterruptedException, IOException {
 
 Properties property = new Properties();
-		
-	    FileInputStream objFile = new FileInputStream("C:/Users/Stepa/Workspace/WebDriverProject/resources/main.properties"); // TODO: FIX THIS
-	    
+
+		String F = "/Users/stepanmisiruk/IdeaProjects/Test-Propovednik.com/resources/main.properties";
+		FileInputStream objFile = new FileInputStream(F);
+
 	    try {
 	    	property.load(objFile);
 	    	
@@ -50,8 +51,8 @@ Properties property = new Properties();
 		String enableAudioButtonStyle = enableAudioButtonElement.getAttribute("style");
 		//System.out.println(enableAudioButtonStyle);
 		assertTrue(enableAudioButtonStyle.equals("display: none;"));
-		
-		driver.quit();
+
+		driverClose(driver);
 	}
 
 }

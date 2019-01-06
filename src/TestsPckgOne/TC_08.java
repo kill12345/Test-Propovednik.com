@@ -16,14 +16,12 @@ public class TC_08 extends BaseClass {
 	@Test
 	public void Test_8() throws InterruptedException, IOException {
 
-		
-
 		WebDriver driver = getDriverInstance();
 
 		Properties property = new Properties();// инициализируем объект
 												// Properties
-
-		FileInputStream objFile = new FileInputStream("C:/Users/Stepa/Workspace/WebDriverProject/resources/main.properties");
+		String F = "/Users/stepanmisiruk/IdeaProjects/Test-Propovednik.com/resources/main.properties";
+		FileInputStream objFile = new FileInputStream(F);
 
 		try {
 			property.load(objFile);
@@ -72,7 +70,7 @@ public class TC_08 extends BaseClass {
 
 		Thread.sleep(3000);
 
-		driver.quit();
+		driverClose(driver);
 
 		System.out.println("webBrowsers is working");
 

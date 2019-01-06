@@ -66,8 +66,7 @@ public class Playlist {
 		List<WebElement> itemList = getItems(driver);
 		System.out.println("itemsList.size(): " + itemList.size());
 
-		for (int i = 0; i < itemList.size(); i++)
-			;
+		for (int i = 0; i < itemList.size(); i++) ;
 		{
 			int i = 0;
 			WebElement ListName = itemList.get(i);

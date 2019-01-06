@@ -3,17 +3,17 @@
 <suite name="Report">
   <test name="Report Test">
     <classes>
-      <class name="TestScript.TC_1" />
-      <class name="TestScript.TC_2" />
-      <class name="TestScript.TC_3" />
-      <class name="TestScript.TC_4" />
-      <class name="TestScript.TC_5" />
-      <class name="TestScript.TC_6" />
-      <class name="TestScript.TC_8" />
-      <class name="TestScript.TC_7" />
-      <class name="TestScript.TC_9" />
-      <class name="TestScript.TC_10" />
-      <class name="TestScript.TC_11" />
+      <class name="TestsPckgOne.TC_01" />
+      <class name="TestsPckgOne.TC_02" />
+      <class name="TestsPckgOne.TC_03" />
+      <class name="TestsPckgOne.TC_04" />
+      <class name="TestsPckgOne.TC_05" />
+      <class name="TestsPckgOne.TC_06" />
+      <class name="TestsPckgOne.TC_08" />
+      <class name="TestsPckgOne.TC_07" />
+      <class name="TestsPckgOne.TC_09" />
+      <class name="TestsPckgOne.TC_10" />
+      <class name="TestsPckgOne.TC_11" />
     </classes>
   </test>
 </suite>

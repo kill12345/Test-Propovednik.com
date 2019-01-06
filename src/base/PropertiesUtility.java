@@ -24,7 +24,7 @@ public class PropertiesUtility {
 	        * @param propertyName
 	        * @return
 	     */
-	public static String getProperty(String propertyName){;
+	public static String getProperty(String propertyName){
 		loadProperties();
 		return property.getProperty(propertyName);
 	}

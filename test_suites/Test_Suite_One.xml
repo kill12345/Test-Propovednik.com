@@ -6,15 +6,15 @@
 		<classes>
 
 
-			<class name="TestsPckgOne.TC_1" />
-			<class name="TestsPckgOne.TC_2" />
-			<class name="TestsPckgOne.TC_3" />
-			<class name="TestsPckgOne.TC_4" />
-			<class name="TestsPckgOne.TC_6" />
-			<class name="TestsPckgOne.TC_5" />
-			<class name="TestsPckgOne.TC_7" />
-			<class name="TestsPckgOne.TC_8" />
-			<class name="TestsPckgOne.TC_9" />
+			<class name="TestsPckgOne.TC_01" />
+			<class name="TestsPckgOne.TC_02" />
+			<class name="TestsPckgOne.TC_03" />
+			<class name="TestsPckgOne.TC_04" />
+			<class name="TestsPckgOne.TC_06" />
+			<class name="TestsPckgOne.TC_05" />
+			<class name="TestsPckgOne.TC_07" />
+			<class name="TestsPckgOne.TC_08" />
+			<class name="TestsPckgOne.TC_09" />
 			<class name="TestsPckgOne.TC_11" />
 			<class name="TestsPckgOne.TC_10" />
 

@@ -70,8 +70,7 @@ public class AudioPlayer {
 	}
 
 	public String getCurrectlyPlayingTrackName(WebDriver driver) {
-		WebElement currentlyPlayingTrackElement = driver
-				.findElement(By.xpath("//div[@id='progressSlider']/div[1]/div[2]"));
+		WebElement currentlyPlayingTrackElement = driver.findElement(By.xpath("//div[@id='progressSlider']/div[1]/div[2]"));
 		String currentlyPlayingTrackName = currentlyPlayingTrackElement.getText().trim();
 		return currentlyPlayingTrackName;
 	}
@@ -83,16 +82,14 @@ public class AudioPlayer {
 	}
 
 	public boolean isDisableVolumeButtonShown(WebDriver driver) {
-		boolean DisableVolumeButton = driver
-				.findElement(By.xpath("//*[@id='jp_container_1']/div/div[1]/div[1]/button[1]")).isEnabled();
+		boolean DisableVolumeButton = driver.findElement(By.xpath("//*[@id='jp_container_1']/div/div[1]/div[1]/button[1]")).isEnabled();
 		System.out.print(DisableVolumeButton);
 		return DisableVolumeButton;
 
 	}
 
 	public boolean isEnableVolumeButtonShown(WebDriver driver) {
-		WebElement isEnableleVolumeButton = driver
-				.findElement(By.xpath("//*[@id='jp_container_1']/div/div[1]/div[1]/button[1]"));
+		WebElement isEnableleVolumeButton = driver.findElement(By.xpath("//*[@id='jp_container_1']/div/div[1]/div[1]/button[1]"));
 		if (isEnableleVolumeButton.isEnabled()) {
 			System.out.println("Button is  enabled");
 			return true;
@@ -102,15 +99,13 @@ public class AudioPlayer {
 	}
 
 	public void clickRepeatButton(WebDriver driver) {
-		WebElement RepeatButton = driver
-				.findElement(By.xpath("//button[@class = 'jp-repeat-off light-grey-style animated']"));
+		WebElement RepeatButton = driver.findElement(By.xpath("//button[@class = 'jp-repeat-off light-grey-style animated']"));
 		RepeatButton.click();
 	}
 
 	public boolean isRepeatButtonEnabled(WebDriver driver) {
 
-		WebElement isRepeatButtonEnabled = driver
-				.findElement(By.xpath("//*[@id='jp_container_1']/div/div[1]/div[5]/button[2]"));
+		WebElement isRepeatButtonEnabled = driver.findElement(By.xpath("//*[@id='jp_container_1']/div/div[1]/div[5]/button[2]"));
 		String ButtonEnabled = isRepeatButtonEnabled.getAttribute("style");
 		if (ButtonEnabled.equals("display: none;")) {
 			System.out.println("RepeatButtonEnabled");

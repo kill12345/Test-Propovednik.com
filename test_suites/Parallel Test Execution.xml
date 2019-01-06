@@ -7,9 +7,9 @@
 		<classes>
 
 
-			<class name="TestsPckgOne.TC_1" />
-			<class name="TestsPckgOne.TC_2" />
-			<class name="TestsPckgOne.TC_3" />
+			<class name="TestsPckgOne.TC_01" />
+			<class name="TestsPckgOne.TC_02" />
+			<class name="TestsPckgOne.TC_03" />
 			
 
 
@@ -22,9 +22,9 @@
 		<classes>
 
 
-			<class name="TestsPckgOne.TC_1" />
-			<class name="TestsPckgOne.TC_2" />
-			<class name="TestsPckgOne.TC_3" />
+			<class name="TestsPckgOne.TC_01" />
+			<class name="TestsPckgOne.TC_02" />
+			<class name="TestsPckgOne.TC_03" />
 			
 
 

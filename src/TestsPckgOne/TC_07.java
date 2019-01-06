@@ -13,9 +13,11 @@ public class TC_07 extends BaseClass {
 	@Test
 	public void Test_7() throws InterruptedException, IOException {
 
+		String F = "/Users/stepanmisiruk/IdeaProjects/Test-Propovednik.com/resources/main.properties";
+
 		 Properties property = new Properties();
 			
-		    FileInputStream objFile = new FileInputStream("C:/Users/Stepa/Workspace/WebDriverProject/resources/main.properties"); // TODO: FIX THIS
+		    FileInputStream objFile = new FileInputStream(F);
 		    
 		    try {
 		    	property.load(objFile);
@@ -23,8 +25,6 @@ public class TC_07 extends BaseClass {
 		    }catch (IOException e){
 		    	
 		    }
-		    
-		    
 		    
 		    System.setProperty("webdriver.gecko.driver", property.getProperty("GECKODRIVERLOCATION"));
 		    
@@ -61,7 +61,7 @@ public class TC_07 extends BaseClass {
 
 		}
 
-		driver.quit();
+		driverClose(driver);
 	}
 
 }
